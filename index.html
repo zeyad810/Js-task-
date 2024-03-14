@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 900;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #222;
+        }
+
+        div {
+            background-color: #555;
+            width: 450px;
+            border-radius: 10px;
+            padding: 30px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        button {
+            width: 100%;
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            background-color: #0005ff;
+            padding: 8px;
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        input {
+            width: 100%;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        p {
+            padding: 10px;
+            color: #fff;
+            width: 80%;
+            line-height: 1.8;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        label {
+            align-self: self-start;
+            color: #fff;
+            margin-bottom: -15px;
+        }
+    </style>
+    <title>Age Calc</title>
+</head>
+
+<body>
+
+    <div>
+        <label for="from"> From </label>
+        <input type="date" name="from" id="from">
+        <label for="to"> To</label>
+        <input type="date" id="to" name="to">
+        <button id="calc">Calculate Age</button>
+        <p id="result"> </p>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
